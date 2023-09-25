@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+   <title>¿Qué es un HTPP<?</title> 
+   <link rel="shortcut icon" href="imag-2.jpg" type="image/x-icon">
+   <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+<nav>
+    <h1>PROTOCOLO HTTP</h1>
+        <ul>
+            <li><a href="">¿Qué es?</a></li>
+            <li><a href="">Estructura y funcionamiento</a></li>
+            <li><a href="">Métodos de petición</a></li>
+            <li><a href="">Códigos de respuesta</a></li>
+        </ul>
+    </nav>
+   <div class="contenido">
+    <div class="articulos">
+        <div class="secciones">
+    <div>
+        <h2>¿QUÉ ES?</h2>
+        <br>
+                    <p>
+            De las siglas en inglés World Wide Web, es un protocolo de transmisión de información de la World Wide Web. 
+            Con este se establecen criterios de sintaxis y semática informática para el establecimiento de la comunicación
+            entre los diferentes elementos que se constituyen la arquitectura web. Además, permite una comunicación fluida 
+            y en un mismo lenguaje. La petición HTTP las hacen los clientes de nuestra interfaz de programación de aplicaciones (API) 
+            hacia nuestro API. Cuando el nuestro recibe esta petición, la procesa y luego devuelve una respuesta llamada respuesta HTTP.</p>
+                    </br>
+      </div>
+     <div><img src="c:\Users\Colibecas\OneDrive\Documentos\Actividades\fundamentos\imagen.jpg"></div>
+    </div>
+
+    <div class="seccionesAux">
+    <div>
+    <h3>ESTRUCTURA </h3>
+    </div>
+    <p> Se divide en 3 partes:</p>
+<br>
+    </br>
+    <ul>- Línea de petición.</ul>
+    <ul>-  Cabeceras.</ul> 
+    <ul>- Un cuerpo.</ul>
+<br> </br>
+
+<h4> 1.- LÍNEA DE PETICIÓN.</h4>
+
+<p>Son mensajes enviados por un cliente, para iniciar una acción en el servidor. 
+    La línea de inicio está conformada por:
+    <br> </br>
+
+    <ol>
+        <li>Método HTTP, puede ser un verbo: GET, PUT, POST, o un nombre como: HEAD U OPTIONS, 
+            para describir la acción que se pide realizar.</li>
+            <li>El objetivo de la petición, el formato del objetivo de la petición varía según 
+                los distintos métodos HTTP.</li>
+                <li>La versión de HTTP define la estructura de los mensajes, es indicador de la 
+                    versión que espera que se use para la respuesta.</li>
+    <br> </br>     
+    <h4> 2.- CABECERAS.</h4>           
+<li>Las cabeceras HTTP de una petición siguen la misma estructura que la de una cabecera HTTP. 
+    Es una cadena de carácteres, sefuida por dos puntos y un valor cuya estructura depende de la cabecera.
+    Hay gran variedad de cabeceras, se clasifican en:</li>
+   <li> - Cabeceras generales, afectan al mensaje como una unidad completa.</li>
+   <li> - Cabeceras de petición, modifican la petición especificándola con mayor detalle.</li>
+   <li> - Cabeceras de entidad, se aplican al cuerpo de la petición.</li>
+   <br> </br>
+
+<h4> 3.- CUERPO.</h4>
+<p>No todas las peticiones llevan un cuerpo. Algunas peticiones pueden mandar peticiones
+    al servidor con el fin de actualizarlo. Los cuerpos se dividen en dos categorías:
+    <li>- Cuerpos con un único dato, un archivo definido por las dos cabeceras.</li>
+    <li>- Cuerpos con muchos datos, están formados por distintos contenidos.</li>
+</p>
+    </ol> 
+
+<div><img src="estructura.jpg"></div>
+<br></br>
+
+<h3>FUNCIONAMIENTO</h3>
+<p>
+    Se basa en un esquema de petición-respuesta entre el servidor web y el usuario que 
+    realiza la solicitud de transmisión de datos.Éste protocolo está apoyado sobre los 
+    servidores de conexión TCP/IP. El protocolo TCP es el encargado de mantener la 
+    comunicación y garantizar que el proceso de intercambio de datos se realice sin errores.  
+</p>
+<br></br>
+
+<h3>MÉTODOS DE PETICIÓN</h3>
+   <p>Se utilizan para indicar la acción que se desea realizar.Estos métodos de solicitud 
+    a veces son llamados HTTP verbs, implementan una semántica diferente.</p>
+    <li>  GET. Solicita una representación de un recurso específico, las peticiones que 
+        usen éste método sólo deben recuperar datos.</li>
+    <li>HEAD. Pide una respuesta idéntica a la de una petición GET.</li>
+    <li>POST. Se utiliza para enviar enviar una entidad a un recurso espevífico, causa 
+        cambio en el estado o efectos secundarios en el servidor.</li>
+    <li>PUT. Remplaza todas las representaciones actuales del recurso de destino con 
+        la carga útil de la petición.</li>    
+    <li>DELETE. Borra algo en específico.</li>
+    <li>CONNECT. Conecta hacia el servidor identificado por el recurso.</li>
+    <li>OPTIONS. Se utiliza para describir las opciones de comunicación para el destino</li>    
+    <li>TRACE. Realiza prueba de bucle de retorno de mensaje en la ruta al acceso de destino.</li>
+    <li>PATCH. Se utiliza para aplicar modificaciones a un recurso.</li>
+<br></br>
+
+<h3>CÓDIGOS DE RESPUESTA</h3>
+<p>Son los mensajes o respuestas que se generan cuando entran en contacto el servidor web 
+    de un sitio con un navegador. Están divididos en 5 tipos diferentes, en función de la clase de respuesta que devuelven. 
+    Pues si el usuario recibe un código de estado HTTP quiere decir que la petición llegó hacia el servidor dando por resultado una respuesta.
+    <li> 100s. Son códigos informativos que anuncian la solicitud iniciada y que aún está abierta y en proceso.</li>
+    <li> 200s. Recoge los códigos de estado HTTP, la comunicación del navegador y el servidor terminó de buena manera.</li>
+    <li> 300s. Indica que el redireccionamiento de recursos que han sido cambiados por unos nuevos no fueron suficientes.</li>
+    <li> 400s. Son los códigos que informan de un error acerca de la solicitud.</li>
+    <li> 500s. Son los códigos de error, que mencionan que la solicitud si fue aceptada pero hay algún problema en el servidor que no deja dar respuesta.</li>
+</p>
+<br></br>
+<h3> FUENTES BIBLIOGRÁFICAS.</h3>
+<p> Digital Menta.(2021) "Códigos de respuesta y errores HTTP". Disponible en:https://www.digitalmenta.com/blog/codigos-de-respuesta-y-errores-http/</p>
+<p>"Métodos de petición HTTP". Mdn Web Docs. Disponible en:https://developer.mozilla.org/es/docs/Web/HTTP/Methods</p>
+<p>"Mensajes HTTP". Mdn Web Docs. Disponible en:https://developer.mozilla.org/es/docs/Web/HTTP/Messages</p>
+<p>Gavilán,F.(2019) "Anatomía de una petición HTTP". Disponible en: https://gavilanch.wordpress.com/2019/01/03/anatomia-de-una-peticion-http/</p>
+</div>
+</body>
+</html>
